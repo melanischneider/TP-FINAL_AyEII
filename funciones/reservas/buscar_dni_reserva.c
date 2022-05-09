@@ -17,6 +17,7 @@ int buscar_dni_profesor(long int dni,reserva *ini){
 		}
 		ini = ini->sgte;
 	}
+	
 	return encontrado;
 }
 #endif
