@@ -52,6 +52,7 @@ void ABM_profesores(profesor **ini_profesor,actividad **ini_actividad){
 						printf("ingrese el telefono del profesor\n");
 						scanf("%ld",&nv->telefono);
 						insertar_profesor(&nv,&*ini_profesor);
+						
 					}
 				}
 

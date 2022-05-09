@@ -16,6 +16,7 @@ int buscar_actividades(int codigo,actividad *ini_actividad){
 		}
 		ini_actividad = ini_actividad->sgte;
 	}
+	
 	return buscar;
 }
 #endif

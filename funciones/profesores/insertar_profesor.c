@@ -18,5 +18,6 @@ void insertar_profesor(profesor **nv, profesor **ini_profesor){
         *ini_profesor = *nv;
         *nv = NULL;
 	}
+    
 }
 #endif
