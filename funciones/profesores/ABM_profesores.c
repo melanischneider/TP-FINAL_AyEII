@@ -4,8 +4,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#include"../estructuras.h"
-#include"../prototipos.h"
+#include"../../estructuras.h"
+#include"../../prototipos.h"
 void ABM_profesores(profesor **ini_profesor,actividad **ini_actividad){
 	profesor *nv=NULL;
 	int op,buscar=0,dni_profesor,buscar_dni=0,op_mod;
@@ -35,7 +35,7 @@ void ABM_profesores(profesor **ini_profesor,actividad **ini_actividad){
 			case 1://aniadir un nuevo profesor
 			
 				do{//mientras se encuentre el dni ingresado o el dni es igual a 0, el bucle se repetira
-					listar_actividades(*ini_actividad);
+					listar_codigo_actividades(*ini_actividad);
 					printf("ingrese el codigo de la actividad que desee\n");scanf("%d",&nv->cod_act);
 					buscar = buscar_actividades(nv->cod_act,*ini_actividad);
 				}while(buscar!=1 && nv->cod_act !=0);

@@ -6,7 +6,7 @@
 #include<string.h>
 #include"../estructuras.h"
 #include"../prototipos.h"
-void listar_actividades(actividad *ini){
+void listar_codigo_actividades(actividad *ini){
 	while(ini != NULL){
 		printf("%d\n",ini->cod_act);
 		ini = ini->sgte;

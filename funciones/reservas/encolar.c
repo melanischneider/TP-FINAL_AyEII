@@ -3,8 +3,8 @@
 
 #include<stdio.h>
 #include<stdlib.h>
-#include"../estructuras.h"
-#include"../prototipos.h"
+#include"../../estructuras.h"
+#include"../../prototipos.h"
 
 void encolar(reserva **nv,reserva **S, reserva **E){
     if(*E == NULL){

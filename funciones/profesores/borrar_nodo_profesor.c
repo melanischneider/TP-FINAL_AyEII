@@ -5,8 +5,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#include"../estructuras.h"
-#include"../prototipos.h"
+#include"../../estructuras.h"
+#include"../../prototipos.h"
 
 void borrar_nodo_profesor(int dato,profesor **ini_profesor){
 profesor *bor=*ini_profesor,*ant=NULL;

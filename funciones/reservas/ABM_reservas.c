@@ -4,11 +4,12 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#include"../estructuras.h"
-#include"../prototipos.h"
+#include"../../estructuras.h"
+#include"../../prototipos.h"
 
 void ABM_reservas(cliente **S,cliente **E){
-    int opcion;
+    int opcion,encontrado;
+    long int dni_quitar;
     cliente *nv=NULL;
     do{
         system("cls");
@@ -26,7 +27,7 @@ void ABM_reservas(cliente **S,cliente **E){
     printf("Ingresar telefono del cliente: ");scanf("%d",&nv->telefono);
     printf("Ingresar fecha de nacimiento del cliente (formato dd/mm/aa): ");scanf("%d/%d/%d",&nv->f_nacimiento.dd,&nv->f_nacimiento.mm,&nv->f_nacimiento.yy);
     do{
-        printf("¿Esta seguro de que quiere realizar la reserva? (1.Si, 0.No): ");scanf("%d",&opcion);
+        printf("Esta seguro de que quiere realizar la reserva? (1.Si, 0.No): ");scanf("%d",&opcion);
     }while(opcion<0 || opcion>1);
     if(opcion){
         encolar(&nv,&*S,&*E);
@@ -35,8 +36,12 @@ void ABM_reservas(cliente **S,cliente **E){
     //fin opcion 1
 
     //opcion 2
-    
-    printf("Ingresar DNI del cliente: ");scanf("%ld",&nv->dni);
+    while(){
+
+    }
+    while(){
+
+    }
     //buscamos el nodo con el dni, si es el que buscamos lo eliminamos, sino, encolamos el nodo
 
     //fin opcion 2

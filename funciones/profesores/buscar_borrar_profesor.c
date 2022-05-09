@@ -5,8 +5,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#include"../estructuras.h"
-#include"../prototipos.h"
+#include"../../estructuras.h"
+#include"../../prototipos.h"
 void buscar_borrar_profesor(long int dato,profesor **bor,profesor **ant){
     *ant = NULL;
     int encontrado=0;
